@@ -9,17 +9,18 @@
 
 
 #Lets create a basic matrix
-myMatrix <- matrix( c(1,3,2,4) , nrow = 2, ncol = 2)
+#myMatrix <- matrix( c(1,3,2,4) , nrow = 2, ncol = 2)
+
 #Next, we create our cacheable matrix
-myCustomMatrix <- makeCacheMatrix(myMatrix)
+#myCustomMatrix <- makeCacheMatrix(myMatrix)
 
 
 #The first execution dont show the comment, because the value of the inverse of the matrix is null
-cacheSolve(myCustomMatrix)
+#cacheSolve(myCustomMatrix)
 
 #This time the execution of the function will show up, the message "getting inverted matrix from cache" 
 #Because the last execution save the value to avoid the recalculation.
-cacheSolve(myCustomMatrix)
+#cacheSolve(myCustomMatrix)
 
 
 
